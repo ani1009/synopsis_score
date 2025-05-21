@@ -1,0 +1,8 @@
+streamlit
+sentence-transformers
+transformers
+openai
+PyMuPDF
+spacy
+textstat
+nltk
