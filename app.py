@@ -4,6 +4,7 @@ import streamlit as st
 import fitz  # For PDF parsing (PyMuPDF)
 from utils.anonymizer import anonymize_text
 
+
 # ─────────────────────────────────────────────────────────────────────────────
 # Page setup
 # ─────────────────────────────────────────────────────────────────────────────
