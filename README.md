@@ -48,8 +48,11 @@ source .venv/bin/activate (For mac)
 ##4. Install Dependencies:
 pip install -r requirements.txt
 
+##5. Download Spacy Model:
+python -m spacy download en_core_web_sm
 
-##5. Run the App:
+
+##6. Run the App:
 streamlit run app.py
 
 
