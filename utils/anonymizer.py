@@ -2,14 +2,14 @@
 
 import re
 import spacy
-import subprocess
+from spacy.cli import download as spacy_download
 
-# Try loading spaCy model; auto-download if missing (Streamlit Cloud safe)
 try:
     nlp = spacy.load("en_core_web_sm")
 except OSError:
-    subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"], check=True)
+    spacy_download("en_core_web_sm")
     nlp = spacy.load("en_core_web_sm")
+
 
 # Match common date formats (e.g. 12/05/2020, 2020-01-01, Jan 1, 2020)
 DATE_PATTERN = re.compile(
