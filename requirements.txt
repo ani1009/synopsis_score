@@ -6,3 +6,4 @@ PyMuPDF
 spacy
 textstat
 nltk
+numpy
